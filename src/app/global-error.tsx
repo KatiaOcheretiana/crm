@@ -1,6 +1,8 @@
 'use client';
 
-interface GlobalErrorProps {}
+import React from 'react';
+
+export interface GlobalErrorProps {}
 
 export default function GlobalError({}: GlobalErrorProps) {
   return (

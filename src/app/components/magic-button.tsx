@@ -1,10 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import Button from './button';
-import { error } from 'console';
+import React, { useEffect, useState } from 'react';
+import Button, { ButtonProps } from '@/app/components/button';
 
-export default function MagicButton({ ...props }) {
+export default function MagicButton(props: ButtonProps) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -14,12 +13,7 @@ export default function MagicButton({ ...props }) {
   }, [count]);
 
   return (
-    <Button
-      {...props}
-      onClick={() => {
-        setCount(count + 1);
-      }}
-    >
+    <Button {...props} onClick={() => setCount(count + 1)}>
       Magic button
     </Button>
   );

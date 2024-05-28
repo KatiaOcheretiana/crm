@@ -1,12 +1,11 @@
-import Sidebar from '../components/sidebar';
+import React from 'react';
+import Sidebar from '@/app/components/sidebar';
 
-interface LayoutProps {
+export interface LayoutProps {
   children: React.ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
-  console.log('rendering');
-
   return (
     <>
       <Sidebar />

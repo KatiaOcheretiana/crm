@@ -44,8 +44,8 @@ export default function Sidebar({}: SidebarProps) {
           </SidebarItem>
         </ul>
         <button
-          onClick={handleExitClick}
           className="flex items-center gap-2 p-6 mt-auto mx-auto"
+          onClick={handleExitClick}
         >
           <Image
             width={18}
